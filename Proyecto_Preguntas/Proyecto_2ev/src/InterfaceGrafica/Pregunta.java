@@ -98,95 +98,62 @@ public class Pregunta extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setForeground(new java.awt.Color(204, 204, 204));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         OpcionB.setBackground(new java.awt.Color(255, 0, 0));
-        OpcionB.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        OpcionB.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         OpcionB.setText("Opción B");
         OpcionB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 OpcionBActionPerformed(evt);
             }
         });
+        jPanel1.add(OpcionB, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 226, 399, 150));
 
         OpcionA.setBackground(new java.awt.Color(0, 153, 255));
-        OpcionA.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        OpcionA.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         OpcionA.setText("Opción A");
         OpcionA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 OpcionAActionPerformed(evt);
             }
         });
+        jPanel1.add(OpcionA, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 226, 403, 150));
 
         OpcionC.setBackground(new java.awt.Color(255, 255, 0));
-        OpcionC.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        OpcionC.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         OpcionC.setText("Opción C");
         OpcionC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 OpcionCActionPerformed(evt);
             }
         });
+        jPanel1.add(OpcionC, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 394, 403, 150));
 
         OpcionD.setBackground(new java.awt.Color(0, 255, 51));
-        OpcionD.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        OpcionD.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         OpcionD.setText("Opción D");
         OpcionD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 OpcionDActionPerformed(evt);
             }
         });
+        jPanel1.add(OpcionD, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 394, 399, 150));
 
         Pregunta.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         Pregunta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Pregunta.setText("Pregunta");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(75, 75, 75)
-                        .addComponent(OpcionC, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(OpcionA, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 175, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(OpcionD, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(OpcionB, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(50, 50, 50))
-            .addComponent(Pregunta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addComponent(Pregunta, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 306, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(OpcionB, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(OpcionA, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(67, 67, 67)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(OpcionD, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(OpcionC, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(56, 56, 56))
-        );
+        jPanel1.add(Pregunta, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 73, 838, 100));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
