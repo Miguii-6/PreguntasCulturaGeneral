@@ -1,6 +1,5 @@
 package InterfaceGrafica;
 
-
 import com.proyecto.preguntas.Preguntas;
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
